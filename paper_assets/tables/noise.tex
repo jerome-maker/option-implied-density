@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\caption{Factorial experiment: median density L1 error by estimator and quote-noise level, pooled over four scenarios, four strike counts (13--97) and five seeds; BL+MJD medians exclude fits that failed to return a density (Table~\ref{tab:snr}).}
+\label{tab:noise}
+\small
+\begin{tabular}{lccccc}
+\toprule
+Estimator & $\sigma_{IV}=0$ & $\sigma_{IV}=0.0005$ & $\sigma_{IV}=0.001$ & $\sigma_{IV}=0.0025$ & $\sigma_{IV}=0.005$ \\
+\midrule
+BL+MJD & 0.024 & 1.853 & 1.929 & 1.988 & 1.996 \\
+SVI & 0.008 & 0.009 & 0.010 & 0.012 & 0.016 \\
+PCA & 0.006 & 0.113 & 0.150 & 0.223 & 0.292 \\
+Spline+GEV & 0.040 & 0.048 & 0.055 & 0.065 & 0.072 \\
+Vanilla NN & 0.477 & 0.413 & 0.475 & 0.452 & 0.541 \\
+PINN & 0.089 & 0.090 & 0.086 & 0.082 & 0.083 \\
+\bottomrule
+\end{tabular}
+\end{table}

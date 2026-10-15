@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\caption{When do no-arbitrage penalties help? Same data as Table~\ref{tab:horse}. Panel A: a base that does not enforce no-arbitrage by construction. Panel B: an arbitrage-free SVI base with a neural residual on total variance, with and without the penalties. Last column: mean L1 over the two scenarios where SVI is most misspecified (30-No-RS, 30-Weak-RS), both noise levels.}
+\label{tab:penalty}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccccc}
+\toprule
+Panel & Estimator & Mean L1 (noisy) & Mean L1 (noiseless) & Mean violation (\%) & Max violation (\%) & L1, SVI-misspecified \\
+\midrule
+A & Vanilla NN & 0.558 & 0.548 & 34.51 & 39.40 & 0.615 \\
+A & PINN & 0.147 & 0.151 & 2.14 & 4.49 & 0.271 \\
+\midrule
+B & SVI & 0.026 & 0.021 & 0.00 & 0.00 & 0.061 \\
+B & SVI+NN & 0.024 & 0.017 & 0.21 & 4.99 & 0.045 \\
+B & SVI+PINN & 0.024 & 0.017 & 0.21 & 4.99 & 0.044 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

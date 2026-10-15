@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\caption{Simulation horse race: eight estimators on the twelve SVJ scenarios (narrow $[-0.2,0.2]$ window, 25 strikes), with and without implied-volatility quote noise ($\sigma_{IV}=0.0025$). L1 is the integrated absolute density error (maximum 2); violation is the share of a dense grid with negative density; variance and kurtosis errors are for the 99\%-truncated moments, medians over scenarios; skew sign counts scenarios with the correct sign out of 12.}
+\label{tab:horse}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccc|ccc}
+\toprule
+ & \multicolumn{5}{c|}{Noisy quotes ($\sigma_{IV}=0.0025$)} & \multicolumn{3}{c}{Noiseless quotes} \\
+Estimator & Mean L1 & Violation (\%) & $|\mathrm{Var}/\mathrm{Var}^*-1|$ & $|\mathrm{Kurt}-\mathrm{Kurt}^*|$ & Skew sign & Mean L1 & Violation (\%) & $|\mathrm{Var}/\mathrm{Var}^*-1|$ \\
+\midrule
+BL+MJD & 1.690 & 0.69 & 8.376 & 0.98 & 12/12 & 0.011 & 0.00 & 0.017 \\
+SVI & 0.026 & 0.00 & 0.009 & 0.07 & 12/12 & 0.021 & 0.00 & 0.002 \\
+PCA & 0.202 & 0.00 & 0.023 & 0.43 & 12/12 & 0.013 & 0.00 & 0.007 \\
+Spline+GEV & 0.067 & 0.00 & 0.096 & 1.06 & 12/12 & 0.047 & 0.00 & 0.091 \\
+Vanilla NN & 0.558 & 34.43 & 0.363 & 0.36 & 1/12 & 0.548 & 34.58 & 0.376 \\
+PINN & 0.147 & 2.35 & 0.422 & 1.58 & 12/12 & 0.151 & 1.93 & 0.488 \\
+SVI+NN & 0.024 & 0.00 & 0.009 & 0.07 & 12/12 & 0.017 & 0.42 & 0.002 \\
+SVI+PINN & 0.024 & 0.00 & 0.009 & 0.07 & 12/12 & 0.017 & 0.42 & 0.002 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

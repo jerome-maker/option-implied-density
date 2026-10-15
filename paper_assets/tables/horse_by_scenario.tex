@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\caption{Integrated absolute density error (L1) by scenario, noisy quotes ($\sigma_{IV}=0.0025$). Lowest value per row in bold.}
+\label{tab:horse_scen}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+Scenario & BL+MJD & SVI & PCA & Spline+GEV & Vanilla NN & PINN & SVI+NN & SVI+PINN \\
+\midrule
+30-No-FM & 1.509 & 0.019 & 0.186 & 0.028 & 0.456 & 0.078 & 0.019 & \textbf{0.019} \\
+30-No-RS & 1.823 & 0.062 & 0.182 & \textbf{0.036} & 0.590 & 0.214 & 0.050 & 0.048 \\
+30-Strong-FM & 1.457 & 0.021 & 0.181 & 0.040 & 0.784 & 0.307 & \textbf{0.021} & 0.021 \\
+30-Strong-RS & 1.681 & 0.052 & 0.175 & \textbf{0.039} & 0.484 & 0.245 & 0.053 & 0.053 \\
+30-Weak-FM & 1.450 & \textbf{0.019} & 0.182 & 0.031 & 0.567 & 0.196 & 0.020 & 0.020 \\
+30-Weak-RS & 1.744 & 0.068 & 0.178 & \textbf{0.036} & 0.651 & 0.337 & 0.054 & 0.054 \\
+60-No-FM & 1.803 & 0.009 & 0.233 & 0.112 & 0.483 & 0.086 & \textbf{0.009} & 0.009 \\
+60-No-RS & 1.795 & \textbf{0.021} & 0.229 & 0.095 & 0.523 & 0.074 & 0.021 & 0.021 \\
+60-Strong-FM & 1.742 & \textbf{0.010} & 0.220 & 0.106 & 0.539 & 0.057 & 0.010 & 0.010 \\
+60-Strong-RS & 1.728 & \textbf{0.012} & 0.208 & 0.084 & 0.580 & 0.042 & 0.012 & 0.012 \\
+60-Weak-FM & 1.782 & \textbf{0.009} & 0.227 & 0.111 & 0.500 & 0.101 & 0.009 & 0.009 \\
+60-Weak-RS & 1.766 & 0.014 & 0.219 & 0.090 & 0.535 & 0.022 & \textbf{0.014} & 0.014 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

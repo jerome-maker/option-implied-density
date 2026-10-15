@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\caption{Real data: twelve live option chains (SPY, QQQ, IWM; 15, 29, 64 and 92 days; snapshot 15 October 2026, 15:23 UTC). Out-of-sample: strikes split into two interleaved folds; each estimator is fit on one fold and the held-out OTM call-equivalent quotes are priced by integrating that estimator's own density. Averages over chains unless stated.}
+\label{tab:real}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+Estimator & OOS inside spread (\%) & OOS error (half-spreads, median) & In-sample inside (\%) & Violation (\%) & Worst negative / peak & Mass (median) & Negative skew (\% chains) & Failed fits \\
+\midrule
+BL+MJD & 0.3 & 574.45 & 0.5 & 7.27 & 3.028 & 1.178 & 33 & 4 \\
+SVI & 25.2 & 3.17 & 28.0 & 0.12 & 0.000 & 0.998 & 100 & 0 \\
+PCA & 45.5 & 1.35 & 41.1 & 0.00 & 0.000 & 0.999 & 100 & 0 \\
+Spline+GEV & 33.1 & 1.61 & 29.2 & 0.00 & 0.000 & 0.996 & 100 & 0 \\
+Vanilla NN & 10.6 & 8.92 & 11.8 & 37.09 & 0.441 & 0.963 & 17 & 0 \\
+PINN & 11.4 & 6.11 & 15.1 & 2.44 & 0.003 & 1.000 & 100 & 0 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\caption{Monte Carlo check of Proposition~\ref{prop:noise}(i): ratio of the empirical standard deviation of the finite-difference Breeden--Litzenberger density (2{,}000 noise draws) to the closed-form value, over interior strikes; and the implied median signal-to-noise ratio $f/\mathrm{sd}$.}
+\label{tab:theory}
+\small
+\begin{tabular}{lcccc}
+\toprule
+Scenario & Strikes & $\sigma_{IV}$ & Ratio: median [min, max] & Median SNR \\
+\midrule
+30-No-FM & 25 & 0.001 & 0.999 [0.969, 1.041] & 4.29 \\
+30-No-FM & 25 & 0.0025 & 1.000 [0.975, 1.017] & 1.72 \\
+30-No-FM & 97 & 0.001 & 0.999 [0.950, 1.043] & 0.27 \\
+30-No-FM & 97 & 0.0025 & 0.997 [0.964, 1.033] & 0.11 \\
+30-Strong-RS & 25 & 0.001 & 1.002 [0.976, 1.044] & 3.46 \\
+30-Strong-RS & 25 & 0.0025 & 1.005 [0.974, 1.024] & 1.38 \\
+30-Strong-RS & 97 & 0.001 & 1.000 [0.967, 1.041] & 0.22 \\
+30-Strong-RS & 97 & 0.0025 & 0.994 [0.957, 1.053] & 0.09 \\
+60-No-FM & 25 & 0.001 & 0.998 [0.985, 1.028] & 2.37 \\
+60-No-FM & 25 & 0.0025 & 0.999 [0.974, 1.051] & 0.95 \\
+60-No-FM & 97 & 0.001 & 1.002 [0.972, 1.037] & 0.15 \\
+60-No-FM & 97 & 0.0025 & 1.002 [0.957, 1.039] & 0.06 \\
+60-Strong-RS & 25 & 0.001 & 0.994 [0.970, 1.012] & 2.57 \\
+60-Strong-RS & 25 & 0.0025 & 0.994 [0.972, 1.011] & 1.03 \\
+60-Strong-RS & 97 & 0.001 & 1.001 [0.961, 1.045] & 0.16 \\
+60-Strong-RS & 97 & 0.0025 & 1.003 [0.953, 1.035] & 0.06 \\
+\bottomrule
+\end{tabular}
+\end{table}

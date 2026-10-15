@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+data/wp4_*/
+*.log
+desktop.ini

@@ -1,0 +1,5 @@
+chain,fold,method,error
+IWM_092d,full,BL+MJD,ValueError('The function value at x=-12.8 is NaN; solver cannot continue.')
+QQQ_015d,A,BL+MJD,ValueError('The function value at x=-32.76800000000001 is NaN; solver cannot con
+QQQ_092d,full,BL+MJD,ValueError('The function value at x=-12.8 is NaN; solver cannot continue.')
+SPY_015d,A,BL+MJD,ValueError('The function value at x=-32.76800000000001 is NaN; solver cannot con
